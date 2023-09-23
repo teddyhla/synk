@@ -49,14 +49,35 @@ Using NHS Levels of care intensity, LEVELs 0,1,2,3 can transition.
 7. Timestamp
 - alongside number 6, ideally should allow timestamping.
 
+8. Congruency 
+- internal logics have to work.  for example SBP > DBP 
+
+9. Derived value
+some of the ABG values are derived values
+
+10. Outlier events
+
+
 ### abg.py
 
 - temperature adjustment 
 - Hendeson-Hasselbach equation for HCO3 from PaCO2 
 
 ### newstwo.py
+
+> TO DO LIST
 - need to allow scale 2 
 - need to allow 'transitioning' from unwell to well and vice versa
 - would therefore have 2 transitioning states
     - well -> unwell
     - unwell -> well 
+
+this script has a main class called 'newsgen' class.
+Newsgen has properties of status 'well' or 'sick'
+
+first, you create a newsgen object with a desired property. 
+second, you then apply a method from newsgen class called 'makeobs'. This takes argument n for number of observations.
+then it will return a dictionary with 3 keys
+key 1 is 't' which is effectively a timestamp in a longitudinal order. Currently this is just integers
+key 2 is observations which is all the observations
+key 3 is observations that is in a format for newscalculation custom function.
