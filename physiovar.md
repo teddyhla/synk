@@ -61,6 +61,14 @@ F :
 
 ### NEWS2 
 Each of the seven domain can score from 0 to 3 then added together.
+Domains are 
+> 1. Heart rate 
+> 2. Respiratory Rate 
+> 3. Systolic Blood pressure
+> 4. Conscious levels
+> 5. Type of gas being breathed
+> 6. Oxygen saturation
+> 7. Temperature 
 
 ### SOFA score
 Each of the six domains can score from 0 to 4 and added together. 

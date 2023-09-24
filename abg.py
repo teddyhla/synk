@@ -2,19 +2,22 @@
 
 import random
 
-class newsgen:
-    """this class allows generation of observation
+class ABGgen:
+    """this class allows generation of abg results 
     can select well or unwell status and then generate obs accordingly using a 
     method 'makeobs'
     """
     def __init__(self,status = 'well'):
         self.status = status.lower()
         self.avail_status = {
-            'well': [rr_well, spo2_well, gas_well, sbp_well, dbp_well, hr_well, neuro_well, temp_well],
-            'sick': [rr_unwell, spo2_unwell, gas_unwell, sbp_unwell, dbp_unwell, hr_unwell, neuro_unwell, temp_unwell]  
+            'hagma': [rr_well, spo2_well, gas_well, sbp_well, dbp_well, hr_well, neuro_well, temp_well],
+            'nagma': [rr_unwell, spo2_unwell, gas_unwell, sbp_unwell, dbp_unwell, hr_unwell, neuro_unwell, temp_unwell],
+            'malk':,
+                'racid':,
+                'ralk': 
         }
         
-    def makeobs(self,n):
+    def makeabg(self,n):
         if self.status in self.avail_status:
             stat = self.avail_status[self.status]
             news = []
