@@ -202,10 +202,10 @@ neuro_unwell = ['confused','verbal','pain','unconscious']
 
 
 #TESTING
-unwellpts = newsgen(status ='sick')
+unwellpts = NEWSgen(status ='sick')
 dit = unwellpts.makeobs(5)
 
-wellpts = newsgen(status = 'well')
+wellpts = NEWSgen(status = 'well')
 dit2 = wellpts.makeobs(5)
 
 # NOW LETS TEST IF CUSTOM FUNCTION NEWSCALC PASSES
