@@ -22,7 +22,7 @@ def unwellobs(x,y):
     return [i for i in x if i not in y]
 
 
-class newsgen:
+class NEWSgen:
     """this class allows generation of observation
     can select well or unwell status and then generate obs accordingly using a 
     method 'makeobs'
